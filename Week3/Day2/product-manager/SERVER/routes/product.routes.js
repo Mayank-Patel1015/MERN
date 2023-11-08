@@ -1,9 +1,9 @@
-const productController = require('../controllers/prodproduct.controller');
+const productController = require('../controllers/product.controller');
 
 module.exports = app => {
-  app.get('/api/prodproducts', productController.findAllproducts);
-  app.get('/api/prodproducts/:id', productController.findOneSingleproduct);
-  app.patch('/api/prodproducts/:id', productController.updateExistingproduct);
-  app.post('/api/prodproducts', productController.createNewproduct);
-  app.delete('/api/prodproducts/:id', productController.deleteAnExistingproduct);
+  app.get('/api/products', productController.findAllProducts);
+  app.get('/api/products/:id', productController.findOneSingleProduct);
+  app.patch('/api/products/:id', productController.updateExistingProduct);
+  app.post('/api/products', productController.createNewProduct);
+  app.delete('/api/products/:id', productController.deleteAnExistingProduct);
 }

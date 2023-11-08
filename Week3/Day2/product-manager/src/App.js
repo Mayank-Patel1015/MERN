@@ -1,12 +1,19 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Form from './components/Form';
+
+import Products from './components/Products';
+import ViewProduct from './components/ViewProduct';
+
 
 function App() {
   return (
     <fieldset>
       <legend>App</legend>
       <h1>Product Manager</h1>
-      <Form />
+      <Routes>
+        <Route path="/products" element={<Products />} />
+        <Route path='/products/:id' element={<ViewProduct />} />
+      </Routes>
     </fieldset>
   );
 }
