@@ -17,6 +17,18 @@ const Products = () => {
       .catch(err => console.log(err))
   }, [])
 
+  const deleteOne = (deleteId) => {
+    axios.delete("http://localhost:8000/api/products/" + deleteId)
+      .then(res => {
+        console.log("OK DELETED", res.data);
+        const filteredProducts = products.filter((eachProduct) => {
+          return eachProduct._id !== deleteId;
+        });
+        setProducts(filteredProducts);
+      })
+      .catch(err => console.log(err));
+  };
+
   return (
     <fieldset>
       <Form />
@@ -27,6 +39,7 @@ const Products = () => {
             <Link to={`/products/${product._id}`}>
               <h3>{product.title}</h3>
             </Link>
+            <button onClick={() => deleteOne(product._id)}> delete </button>
           </div>
         ))
       }
