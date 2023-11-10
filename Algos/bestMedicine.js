@@ -80,7 +80,38 @@ Output: []
 // create an answer array
 // 
 
-function webMD(ailments, meds) { }
+function webMD(ailments, meds) {
+  let numAilments = 0
+  let numTreatedArr = []
+  for (let med of meds) {
+    numAilments = 0
+    for (let ailment of ailments) {
+      if (med.treatableSymptoms.includes(ailment)) {
+        numAilments++
+      }
+    }
+    numTreatedArr.push({ name: med.name, numAilments: numAilments })
+
+  }
+  // console.log(numTreatedArr)
+  numTreatedArr = [...numTreatedArr].sort((a, b) => b.numAilments - a.numAilments)
+  let answerArr = []
+  // console.log(numTreatedArr)
+  if (numTreatedArr[0].numAilments == 0) {
+    return null
+  } else {
+    highest = numTreatedArr[0].numAilments
+    for (let med of numTreatedArr) {
+      // console.log("med", med)
+      if (med.numAilments === highest) {
+        answerArr.push(med.name)
+      } else if (med.numAilments < highest) {
+        break
+      }
+    }
+  }
+  return answerArr
+}
 
 console.log(webMD(["pain"], medications));
 console.log(webMD(["pain", "inflammation", "depression"], medications));
