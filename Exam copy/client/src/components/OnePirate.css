@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.title {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #783e05;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 320px;
+  height: 200px;
+  margin: 20px;
+  object-fit: contain;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
