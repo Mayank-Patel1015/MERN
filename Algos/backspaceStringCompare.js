@@ -52,7 +52,7 @@ const T4 = "b";
 const expected4 = false;
 // Explanation: S becomes "c" while T becomes "b".
 
-// initiate an empty strings named temp and temp2
+// initiate empty strings named temp and temp2
 // loop through the string S
 //   if the current letter is #
 //     remove last character from temp string if possible
@@ -65,7 +65,20 @@ const expected4 = false;
 //     add current letter to temp2
 // return (temp === T)
 
-function gigaBrainBackspaceStringCompater(S, T) {
+// giga brain algo:
+// initiate empty arrays temp and temp2
+// initiate an array "something" with each index containing a letter from S
+// initiate an array "something2" with each index containing a letter from T
+// loop through letters in something
+//   if the letter is # pop from temp
+//   else add the letter to temp
+// loop through letters in something2
+//   if the letter is # pop from temp2
+//   else add the letter to temp2
+// return true if temp is equla to temp2 else return false
+
+
+function gigaBrainBackspaceStringCompare(S, T) {
   let temp = []
   let temp2 = []
   let something = S.split("")
@@ -117,8 +130,10 @@ console.log(backspaceStringCompare(S2, T2))
 console.log(backspaceStringCompare(S3, T3))
 console.log(backspaceStringCompare(S4, T4))
 
-//giga
-console.log(gigaBrainBackspaceStringCompater(S1, T1))
-console.log(gigaBrainBackspaceStringCompater(S2, T2))
-console.log(gigaBrainBackspaceStringCompater(S3, T3))
-console.log(gigaBrainBackspaceStringCompater(S4, T4))
+// giga
+console.log(gigaBrainBackspaceStringCompare(S1, T1))
+console.log(gigaBrainBackspaceStringCompare(S2, T2))
+console.log(gigaBrainBackspaceStringCompare(S3, T3))
+console.log(gigaBrainBackspaceStringCompare(S4, T4))
+
+
