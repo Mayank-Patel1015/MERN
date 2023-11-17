@@ -11,7 +11,7 @@ const Login = () => {
   const [email, setEmail] = useState("")
   return (
     <div style={{ display: 'flex' }}>
-      <div style={{ marginLeft: "20%", width: '50%', marginTop: '10%' }}>
+      <div style={{ marginLeft: "10%", width: '50%', marginTop: '10%' }}>
         <form>
           <h1>
             Login
