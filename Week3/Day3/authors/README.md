@@ -1,3 +1,9 @@
+# Basic React App utilizing MySQL database
+
+![Show authors](https://github.com/Mayank-Patel1015/MERN/assets/141281241/4f9f8507-66d3-4216-9da7-109663e1ca06)
+![Add author](https://github.com/Mayank-Patel1015/MERN/assets/141281241/15613e86-f34a-4435-ab2a-0c2132267a97)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
