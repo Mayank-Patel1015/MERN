@@ -1,7 +1,7 @@
 # MERN
 
 ## Pirates
-### This website uses a mondoDB database to store and retrieve the pirates.
+### Mock website using the MERN (MongoDB, Express, React, Node) stack.
 
 ![Image 12-7-23 at 10 00 PM](https://github.com/Mayank-Patel1015/MERN/assets/141281241/468a1f9d-b868-472a-b497-86af5f0098e8)
 
