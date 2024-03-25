@@ -12,7 +12,10 @@
 
 
 # Authors
-## Basic React App utilizing mongoDB database
+## Basic React App utilizing MongoDB database
 
 ![Show authors](https://github.com/Mayank-Patel1015/MERN/assets/141281241/4f9f8507-66d3-4216-9da7-109663e1ca06)
 ![Add author](https://github.com/Mayank-Patel1015/MERN/assets/141281241/15613e86-f34a-4435-ab2a-0c2132267a97)
+
+# Family Event (Karjisan Parivar)
+![_](https://github.com/Mayank-Patel1015/MERN/assets/141281241/91da5d3e-4aa8-4ad0-9cf5-149fc107035c)
